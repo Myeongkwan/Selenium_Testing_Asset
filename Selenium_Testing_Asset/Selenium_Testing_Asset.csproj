@@ -34,9 +34,26 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Newtonsoft.Json, Version=11.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.11.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Properties.Resources.Designer.cs">
+      <HintPath>D:\Chrome_Download\HowToRunPowerShell_src\HowToRunPowerShell\HowToRunPowerShell\obj\Debug\TempPE\Properties.Resources.Designer.cs.dll</HintPath>
+    </Reference>
+    <Reference Include="STIS.Framework.V4.Configuration">
+      <HintPath>D:\98.Project\Selenum_windowsForm\Selenum_windowsForm\STIS.Framework.V4.Configuration.dll</HintPath>
+    </Reference>
+    <Reference Include="STIS.Framework.V4.Cryptography">
+      <HintPath>.\STIS.Framework.V4.Cryptography.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Drawing" />
+    <Reference Include="System.Management.Automation, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\Windows\assembly\GAC_MSIL\System.Management.Automation\1.0.0.0__31bf3856ad364e35\System.Management.Automation.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -48,13 +65,29 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Asset_Management\Dashboard_Item.cs" />
+    <Compile Include="Asset_Management\Result_Check.cs" />
+    <Compile Include="Asset_Management\Task_Management.cs" />
+    <Compile Include="Asset_Management\Test_Dashboard.cs" />
+    <Compile Include="Asset_Management\Test_Dashboard_China.cs" />
+    <Compile Include="Asset_Management\Test_Performance.cs" />
+    <Compile Include="Asset_Management\Test_Performance_China.cs" />
+    <Compile Include="Asset_Management\Test_Resource.cs" />
+    <Compile Include="Asset_Management\Test_Resource_China.cs" />
+    <Compile Include="Asset_Management\Test_Usage.cs" />
+    <Compile Include="Asset_Management\Test_Usage_China.cs" />
+    <Compile Include="Bsp_Manager.cs" />
+    <Compile Include="DBManager.cs" />
+    <Compile Include="LogManager.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="XmlManager.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="..\packages\Selenium.WebDriver.ChromeDriver.2.38.0\build\Selenium.WebDriver.ChromeDriver.targets" Condition="Exists('..\packages\Selenium.WebDriver.ChromeDriver.2.38.0\build\Selenium.WebDriver.ChromeDriver.targets')" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

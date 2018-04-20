@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<items>
+  <item Url ="https://asset.opsnow.com"
+        UserId ="myeongkwan.kim@bespinglobal.com"
+        Password="Q7AmM5tRu9TSRQLRpong6g=="
+        nation ="global"
+        downloadpath="D:\download1"
+        Asset_Dashboard ="true"
+        Asset_Usage ="false"
+        Asset_Performance="false"
+        Asset_Resource="false"
+        ></item>
+</items>
