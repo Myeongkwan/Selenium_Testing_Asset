@@ -19,6 +19,7 @@ namespace Selenium_Testing_Asset
 
         private SqlConnection GetConnection(string DBName)
         {
+            // 푸쉬 테스트
             DBInstance = "10.30.136.70";
             DBUser = "qateam";
             DBPass = "bespin!2018";
