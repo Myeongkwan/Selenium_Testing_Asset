@@ -26,6 +26,7 @@ namespace Selenium_Testing_Asset.Asset_Management
         /* DB에 회사명 등록시 회사명 조회 */
         public DataSet Select_Companys(string TaskID)
         {
+            string tset = "";
             string querystring = @"exec prc_Select_Company_Used_Asset " + string.Format("'{0}'", TaskID);
             DataSet ds = dbmanager.ExecuteDataQuery(querystring, "Asset_Management");
 
